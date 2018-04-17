@@ -10,7 +10,7 @@
   </body>
 
   <script>
-    navigator.mediaDevices.getUserMedia({audio: true, video: true})
+    navigator.mediaDevices.getUserMedia({audio: false, video: true})
     .then(stream => {
       const video = document.getElementById('localStream');
       video.srcObject = stream;
